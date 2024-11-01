@@ -9,8 +9,8 @@ const en: LocaleType = {
   WIP: "Coming Soon...",
   Error: {
     Unauthorized: isApp
-      ? `For initial use, [Click here](/#/auth) to enter your password`
-      :`For initial use, [Click here](/#/auth) to enter your password
+      ? `For initial use, [Click here](/#/auth) to enter your access code`
+      :`For initial use, [Click here](/#/auth) to enter your access code
      `,
   },
   Auth: {
