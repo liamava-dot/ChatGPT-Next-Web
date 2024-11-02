@@ -113,12 +113,6 @@ export function AuthPage() {
           type="primary"
           onClick={goChat}
         />
-        <IconButton
-          text={Locale.Auth.SaasTips}
-          onClick={() => {
-            goSaas();
-          }}
-        />
       </div>
     </div>
   );
@@ -129,16 +123,7 @@ function TopBanner() {
   const [isVisible, setIsVisible] = useState(true);
   const isMobile = useMobileScreen();
   useEffect(() => {
-    // 检查 localStorage 中是否有标记
-    const bannerDismissed = storage.getItem("bannerDismissed");
-    // 如果标记不存在，存储默认值并显示横幅
-    if (!bannerDismissed) {
-      storage.setItem("bannerDismissed", "false");
-      setIsVisible(true); // 显示横幅
-    } else if (bannerDismissed === "true") {
-      // 如果标记为 "true"，则隐藏横幅
       setIsVisible(false);
-    }
   }, []);
 
   const handleMouseEnter = () => {
