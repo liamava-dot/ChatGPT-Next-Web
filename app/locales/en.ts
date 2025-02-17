@@ -9,18 +9,13 @@ const en: LocaleType = {
   WIP: "Coming Soon...",
   Error: {
     Unauthorized: isApp
-      ? `😆 Oops, there's an issue. No worries:
-     \\ 1️⃣ New here? [Click to start chatting now 🚀](${SAAS_CHAT_UTM_URL})
-     \\ 2️⃣ Want to use your own OpenAI resources? [Click here](/#/settings) to change settings ⚙️`
-      : `😆 Oops, there's an issue. Let's fix it:
-     \ 1️⃣ New here? [Click to start chatting now 🚀](${SAAS_CHAT_UTM_URL})
-     \ 2️⃣ Using a private setup? [Click here](/#/auth) to enter your key 🔑
-     \ 3️⃣ Want to use your own OpenAI resources? [Click here](/#/settings) to change settings ⚙️
+      ? `For initial use, [Click here](/#/auth) to enter your access code`
+      :`For initial use, [Click here](/#/auth) to enter your access code
      `,
   },
   Auth: {
     Return: "Return",
-    Title: "Need Access Code",
+    Title: "Access Code",
     Tips: "Please enter access code below",
     SubTips: "Or enter your OpenAI or Google API Key",
     Input: "access code",
