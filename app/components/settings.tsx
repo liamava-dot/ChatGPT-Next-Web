@@ -253,16 +253,6 @@ function DangerItems() {
         title={Locale.Settings.Danger.Reset.Title}
         subTitle={Locale.Settings.Danger.Reset.SubTitle}
       >
-        <IconButton
-          aria={Locale.Settings.Danger.Reset.Title}
-          text={Locale.Settings.Danger.Reset.Action}
-          onClick={async () => {
-            if (await showConfirm(Locale.Settings.Danger.Reset.Confirm)) {
-              appConfig.reset();
-            }
-          }}
-          type="danger"
-        />
       </ListItem>
       <ListItem
         title={Locale.Settings.Danger.Clear.Title}
@@ -1775,7 +1765,6 @@ export function Settings() {
         </List>
 
         <List id={SlotID.CustomModel}>
-          {saasStartComponent}
           {accessCodeComponent}
 
           {!accessStore.hideUserApiKey && (
