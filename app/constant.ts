@@ -470,7 +470,7 @@ export const VISION_MODEL_REGEXES = [
   /claude-3/,
   /gemini-1\.5/,
   /gemini-exp/,
-  /gemini-2\.0/,
+  /gemini-2\.5/,
   /learnlm/,
   /qwen-vl/,
   /qwen2-vl/,
@@ -534,14 +534,14 @@ const googleModels = [
   "learnlm-1.5-pro-experimental",
   "gemini-exp-1206",
   "gemini-2.0-flash",
-  "gemini-2.0-flash-exp",
+  "gemini-2.5-flash",
   "gemini-2.0-flash-lite-preview-02-05",
   "gemini-2.0-flash-thinking-exp",
   "gemini-2.0-flash-thinking-exp-1219",
   "gemini-2.0-flash-thinking-exp-01-21",
   "gemini-2.0-pro-exp",
   "gemini-2.0-pro-exp-02-05",
-  "gemini-2.5-pro-preview-06-05",
+  "gemini-2.5-pro",
 ];
 
 const anthropicModels = [
@@ -855,5 +855,5 @@ export const internalAllowedWebDavEndpoints = [
 
 export const DEFAULT_GA_ID = "G-89WN60ZK2E";
 
-export const SAAS_CHAT_URL = "https://nextchat.club";
-export const SAAS_CHAT_UTM_URL = "https://nextchat.club?utm=github";
+export const SAAS_CHAT_URL = "https://www.winnietop.site";
+export const SAAS_CHAT_UTM_URL = "https://www.winnietop.site";
